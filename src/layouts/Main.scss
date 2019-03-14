@@ -1,0 +1,23 @@
+.main {
+  &-header {
+    height: 80px;
+    background: aqua;
+    padding: 0px;
+  }
+  &-breadcrumb {
+    height: 30px;
+    padding: 5px 0px;
+  }
+  &-content {
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    word-break: break-all;
+    overflow: auto;
+  }
+  &-footer {
+    text-align: center;
+    height: 20px;
+    padding: 0px;
+    color: lightgrey;
+  }
+}
