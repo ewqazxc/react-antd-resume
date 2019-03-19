@@ -2,8 +2,7 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const path = require('path');
-// const webpack =require('webpack');
-console.log('===开发模式===',process.env.NODE_ENV)
+console.log(moduleConfig,'===开发模式===',process.env.NODE_ENV)
 module.exports = {  
     ...moduleConfig,
     mode: 'development',
@@ -33,6 +32,7 @@ module.exports = {
         // public: 'http://www.fzjuzheng.com:3000',
         open:true,
         // host:"192.168.0.58", 
+        host:"192.168.3.26", 
         port: 666,
         historyApiFallback: {
             index: 'dist/index.html',

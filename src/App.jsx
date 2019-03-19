@@ -12,6 +12,7 @@ import { LocaleProvider } from 'antd';
 import zh_CN from 'antd/lib/locale-provider/zh_CN'; 
 import createHistory from "history/createBrowserHistory";
 
+import '../assets/css/style.scss'
 import faviconImg from '../assets/img/favicon.ico';
 let favicon = document.getElementById('favicon');
 favicon.href = faviconImg;

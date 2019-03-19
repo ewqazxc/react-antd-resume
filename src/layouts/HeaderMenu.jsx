@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 import {
-    Layout, Menu, Breadcrumb, Icon,
+    Layout, Menu, Row, Icon,Col
 } from 'antd';
 
 
@@ -63,24 +63,16 @@ class SiderMenu extends Component {
     render() {
         let pathname = this.props.location.pathname;
         return (
-            <Sider
-                collapsible
-                collapsed={this.state.collapsed}
-                onCollapse={this.onCollapse}
-            >
-                {
-                    this.state.collapsed?null:<div className="main-logo">121234</div> 
-                } 
+
+            <Row className={this.props.className}> 
                 <Menu 
                     theme="dark" 
-                    // defaultSelectedKeys={[this.state.menuKey[pathname]]} 
                     selectedKeys={[this.state.menuKey[pathname]]}
-                    mode="inline"
+                    mode="horizontal"
                 >
                     {this.state.menu}
-                </Menu>
-                
-            </Sider>
+                </Menu>  
+            </Row>
         )
     }
 }
