@@ -17,7 +17,13 @@ import faviconImg from '../assets/img/favicon.ico';
 let favicon = document.getElementById('favicon');
 favicon.href = faviconImg;
 const history = createHistory();
-
+console.log(document.getElementById('canvas'))
+let loading = document.getElementById('canvas');
+if(loading!=null){
+    setTimeout(()=>{
+        loading.remove();
+    },1000)
+}
 const App = () => {
     return (
         <LocaleProvider locale={zh_CN}>
